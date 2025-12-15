@@ -3,9 +3,9 @@
 
 using namespace std;
 
-Node::Node() {
+Node::Node(Student* initStudPtr) {
 	nodePtr = nullptr;
-	studPtr = nullptr;
+	studPtr = initStudPtr;
 }
 
 Node* Node::getNext() { return nodePtr; }

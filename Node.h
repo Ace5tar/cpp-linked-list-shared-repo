@@ -14,7 +14,7 @@ class Node{
 		Node* nodePtr;
 	public:
 		// Default constructor
-		Node();
+		Node(Student* initStudPtr);
 		// Deconstructor
 		// NOTE: in order to prevent memory leaks, deleting a node will delete the next node in the list, which will then continue down the list, make sure to use setNext(nullptr) before deleting and ensure that the next node is pointed to somewhere else
 		~Node();
